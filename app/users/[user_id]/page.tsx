@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Props {
-  params: { id: number };
+  params: { id: string };
 }
 
 // Props only works at page, layout, and route level.
