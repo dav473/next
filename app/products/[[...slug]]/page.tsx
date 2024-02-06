@@ -6,12 +6,18 @@ import React from 'react'
 interface Props{
     params:{
         slug:string[]
-    }
+    },
+    searchParams:{sortOrder:string}
 }
-const ProductPage = ({params:{slug}}:Props) => {
+const ProductPage = ({params:{slug}, searchParams:{sortOrder}}:Props) => {
   return (
   //Catch-all Segments(
-    <div>ProductPage URL in details is {slug}</div>
+<>
+<div>ProductPage URL in details is {slug}</div>
+    <div>Sort order is {sortOrder}</div>
+
+</>
+    
   )
 }
 
